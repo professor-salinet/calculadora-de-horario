@@ -1,0 +1,15 @@
+.custom-card {
+    background-color: #d4edda; /* verde claro */
+    border: 2px solid #add8e6; /* azul claro */
+    border-radius: 15px;
+}
+.form-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+.form-section label {
+    flex: 1;
+    min-width: 120px;
+}
