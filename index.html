@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./index.css">
 </head>
 <body>
+    <h1 class="text-center py-4">Calculadora de horário</h1>
     <div class="container py-5">
         <div class="row justify-content-center">
             <div class="col-md-8">
@@ -28,6 +29,9 @@
                                 <label for="segundo1">Segundo</label>
                                 <input type="number" class="form-control" id="segundo1" min="0" max="59">
                             </div>
+                        </div>
+                        <div class="alert alert-danger" role="alert" id="alertaHorarioInicial" style="display: none;">
+                            Mensagem...
                         </div>
                     </div>
     
@@ -56,6 +60,9 @@
                             <label class="form-check-label" for="multiplicar" id="lblFator">Fator:</label>
                             <input class="form-control" type="number" name="fator" id="fator" min="0" max="59">
                         </div>
+                        <div class="alert alert-danger" role="alert" id="alertaFator" style="display: none;">
+                            Mensagem...
+                        </div>
                     </div>
 
                     <div id="resultadoDiv">
@@ -76,6 +83,9 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="alert alert-danger" role="alert" id="alertaHorarioFinal" style="display: none;">
+                            Mensagem...
+                        </div>
                     </div>
     
                     <div class="form-section">
@@ -83,10 +93,6 @@
                         <button class="btn btn-secondary" onclick="limpar()">Limpar</button>
                     </div>
 
-                    <div class="alert alert-danger" role="alert" id="alertaErro" style="display: none;">
-                        Mensagem...
-                    </div>
-    
                     <h4 class="mb-3">Resultado:</h4>
                     <div class="form-section">
                         <div class="row mb-3">
